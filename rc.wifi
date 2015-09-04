@@ -1,0 +1,15 @@
+#!/system/bin/sh
+
+##### This section is using brcm_patchram_plus to create hci interface #####
+#sleep 3
+#/system/bin/brcm_patchram_plus -d --patchram /system/etc/firmware/brcm/bcm4329.hcd --baudrate 3000000 --enable_hci --use_baudrate_for_download /dev/ttymxc2 &
+#sleep 5
+#chmod 665 /sys/class/rfkill/rfkill0/state
+#chown 1002:1002 /sys/class/rfkill/rfkill0/state
+#echo 0 > /sys/class/rfkill/rfkill0/state
+
+##### Insert all the kernel module here to enable your wireless adapters
+
+insmod /system/bin/wifi/brcmutil.ko
+insmod /system/bin/wifi/brcmfmac.ko
+
