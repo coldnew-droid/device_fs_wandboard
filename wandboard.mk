@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES +=	\
 PRODUCT_COPY_FILES +=	\
 	device/fsl/common/input/eGalax_Touch_Screen.idc:system/usr/idc/prism.idc \
 	device/fsl/common/input/eGalax_Touch_Screen.idc:system/usr/idc/ADS7846_Touchscreen.idc \
+	device/fsl/wandboard/input/ilitek_hid.idc:system/usr/idc/ilitek_hid.idc \
 
 # Bluetooth firmware files.
 PRODUCT_PACKAGES += \
