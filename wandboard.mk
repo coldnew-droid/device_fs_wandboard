@@ -18,7 +18,7 @@ PRODUCT_DEVICE := wandboard
 
 PRODUCT_COPY_FILES += \
 	device/fsl/wandboard/required_hardware.xml:system/etc/permissions/required_hardware.xml \
-	device/fsl/wandboard/init.rc:root/init.freescale.rc \
+	device/fsl/wandboard/init.freescale.rc:root/init.freescale.rc \
 	device/fsl/wandboard/gpsreset.sh:system/etc/gpsreset.sh \
 	device/fsl/wandboard/audio_policy.conf:system/etc/audio_policy.conf \
 	device/fsl/wandboard/audio_effects.conf:system/vendor/etc/audio_effects.conf
